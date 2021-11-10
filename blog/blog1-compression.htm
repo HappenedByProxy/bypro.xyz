@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css">
+    <title>Blog 1</title>
+</head>
+<body>
+    <div id="blog">
+        <p>
+            /\ByProxy\/
+            ##############################################################
+        BLOG 1 - Data Compression | 01/12/2020
+        ##############################################################
+        If you use a computer, I bet you compress or decompress at least one thing every week. By that, I mean you open or make a zip, rar, 7z and so on. Going to assume you know about compressing stuff already.<br><br>
+        Typically you'd use WinRAR, basically everyone does. But, you should ideally be using 7-Zip instead. Why? WinRAR is proprietary, commercialised- it's closed source, and you need to pay for it. 7-Zip is free and open source, with support for more experimental compression methods if that's your thing. Depending on what you're compressing, sometimes 7-Zip will be better, or maybe it's incredibly worse! Even more, RAR3 can't be opened in 7-Zip.<br><br>
+        
+        So, why isn't WinRar always the best choice? Here are my findings. The percentages are the compression ratio, rounded and calculated as (compressed size) / (original size) x 100. <br>
+        Also, the compression methods are as follows: .arc = <a href="https://sourceforge.net/projects/freearc/">FreeArc</a>, .rz = <a href="https://encode.su/threads/2829-RAZOR-strong-LZ-based-archiver">Razor</a>, .7z = 7-Zip, .rar = WinRar. There will be several non-standard 7-Zip methods too. While Razor will have sometimes outstanding performance, it is closed source, although experimental.<br>
+        <h3>Canterbury Corpus</h3><p>
+        
+        <img src="images/blog1-cantrbry.png"><br>
+        This is <a href="https://corpus.canterbury.ac.nz/descriptions/#cantrbry">The Canterbury Corpus</a>, a benchmark for comparing compression methods. It contains 11 different kinds of small files. Sorted by best to worse compression, on their heaviest settings. I don't remember what "LZ4again" is, assuming that's the heaviest and not default settings... For comparison, the original folder is 2.68mb. <br><br>
+        
+        But I wanted something bigger, something that'd take up more power to compress, something that'd really push it.<br>
+        <h3>Noita</h3><p>
+        Noita is an action roguelite game that first got released in early access in September 2019. Here, I used it as a test in compression. It's important to note that mods were installed in my game, so the folder is bigger than normal. First, we must inspect the contents of the game. Noita is mostly made up of text files, along with compressed sound files(bank), and lossless PNG files.<br>
+        <img src="images/blog1-noitacontents.png"><br>
+    
+        Compression works by finding repeated patterns and replacing them with shorter representations. Text works very well when compressing it, while something like a video will be terrible at it. Why? Because videos are a random stream of data, there is no pattern in it. That's when something like WebM comes into play. Therefore, using Noita as a test was a good idea.<br><br>
+        
+        <img src="images/blog1-noitacompression.png"><br>
+        
+        <h3>enwik9</h3><p>
+        
+        enwik9 is another benchmark for compression; it is the first 1 billion bytes of Wikipedia, UTF-8 encoded XML consisting of primarily English text. Perfect. The size of enwik9 is 976,563 KB<br>
+        
+        <img src="images/blog1-enwik9.png"><br>
+        
+        <h3>Conclusion</h3><p>
+        
+        The best performing contenders appear to be Razor and FreeArc. However, Razor is closed source and experimental, while FreeArc is free and open source. What this means for you, the user, is that FreeArc can be implemented in other programs! This wasn't meant to be a shill of FreeArc, but it feels like it now doesn't it?<br><br>
+        
+        Except, there is a bit of a problem with FreeArc- it is considered abandonware, the developers has not released any news for 4 years, and the official website is offline. In fact, the version of FreeArc I used for these tests is 0.51, from 2009.  Thankfully, as it's open source, somebody can take up the job themselves.<br>
+        
+        Where to end? I don't know. But, go ahead and experiment! A .zip isn't very fancy, there are a lot more algorithms being developed.
+    </div>
+</body>
+</html>

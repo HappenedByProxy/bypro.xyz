@@ -1,0 +1,19 @@
+.blog {
+	display: inline-block;
+	word-wrap: break-word;
+	width: 100px;
+    white-space: normal;
+    height: 200px;
+    color: red;
+}
+
+p {
+    word-wrap: break-word;
+    width: 500px;
+    
+}
+
+h3 {
+    word-wrap: break-word;
+    width: 500px;
+}
