@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+    <TITLE>Hello, world!</TITLE>
+	
+	<style>
+		h1 {text-align: center;}
+		p {text-align: center;}
+		div {text-align: center;}
+		IMG {text-align: center;}
+		
+		<!-- This chunk of CSS is ugly but it works so I don't mess with it -->
+		#nav{
+			border-width:1px 0;
+			list-style:none;
+			margin:10;
+			padding:0;
+			text-align:center;
+		}
+		
+		#nav li{
+			display:inline;
+		}
+		#nav a{
+			display:inline-block;
+		}
+		
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+		
+		div.fixed {
+			position: fixed;
+			width: 100%;
+			bottom: 10px;
+		} 
+		
+	</style>
+	<base target="_parent">
+</HEAD>
+<BODY style = "background-image: url(cloud1SIDE.jpg)">
+	<!-- This is the page shown as the sidebar. -->
+
+	<H1>Title!</H1>
+	<IMG SRC="TEMP.png" class="center">
+	<P>Hello!!</P>
+	
+	<!-- The buttons. -->
+	<UL id="nav">
+		<LI><A HREF="MAIN.HTM" target="bingo"><img src="buttons/homeButton1.gif"></A></LI><BR><BR>
+		<LI><A HREF="ABOUT.HTM" target="bingo"><img src="buttons/aboutButton1.gif"></A></LI><BR><BR>
+		<LI><A HREF="CONTACT.HTM" target="bingo"><img src="buttons/contactButton1.gif"></A></LI><BR><BR>
+		<LI><A HREF="BLOG.HTM" target="bingo"><img src="buttons/blogButton1.gif"></A></LI><BR><BR>
+		<LI><A HREF="3D.HTM" target="bingo"><img src="buttons/3dButton1.gif"></A></LI><BR><BR>
+		<LI><A HREF="2D.HTM" target="bingo"><img src="buttons/2dButton1.gif"></A></LI><BR><BR>
+		<LI><A HREF="COMPUTING.HTM" target="bingo"><img src="buttons/workButton1.gif"></A></LI>
+
+		
+	</UL>
+
+
+	<!-- The funny web badges at the bottom. -->
+	<DIV CLASS="fixed">
+		<img src="pins/get-110x32_002.gif" width="110" height="32" border="0">
+		<a href="http://wiby.me/"><img src="pins/wiby.gif" ></a><br>
+		<img src="pins/linux-contra-ms.gif" width="163" height="25" >
+
+	</DIV>
+	
+
+</BODY>
+</HTML>
