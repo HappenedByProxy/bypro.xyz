@@ -1,5 +1,7 @@
 # My website
 
 Written with Notepad++, VSCodium.  
-Buttons made with ([)http://www.agamabuttons.com/)[Agama Buttons].  
-Background made with (http://spiralgraphics.biz/genetica.htm)[Genetica 4.0].  
+Buttons made with [Agama Buttons](http://www.agamabuttons.com/).  
+Background made with [Genetica 4.0](http://spiralgraphics.biz/genetica.htm).  
+
+
